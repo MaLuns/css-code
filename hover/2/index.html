@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<meta name="keywords" content=" ">
+<meta name="description" content="悬停填充动画效果">
+<title>
+    css 悬停填充
+</title>
+     
+        
+     
+    <style >body {
+  background: #ececec;
+}
+.content {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 20px 30px;
+  box-shadow: 0 0 6px 0px #c8c8c8, 0 0 20px 6px #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+.icon {
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 72px;
+  height: 72px;
+  margin: 0 15px;
+}
+.icon:before {
+  content: ' ';
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: all 0.3s;
+}
+.icon::after {
+  content: ' ';
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.icon:hover::before {
+  height: 100%;
+}
+.icon:hover::after {
+  top: 110%;
+}
+.icon.weibo {
+  background-image: url("../asset/weibo1.svg");
+}
+.icon.weibo:before {
+  background-image: url("../asset/weibo.svg");
+}
+.icon.weibo:hover::after {
+  background-color: #d52b2a;
+}
+.icon.weixin {
+  background-image: url("../asset/weixin1.svg");
+}
+.icon.weixin:before {
+  background-image: url("../asset/weixin.svg");
+}
+.icon.weixin:hover::after {
+  background-color: #44b035;
+}
+.icon.qq {
+  background-image: url("../asset/qq1.svg");
+}
+.icon.qq:before {
+  background-image: url("../asset/qq.svg");
+}
+.icon.qq:hover::after {
+  background-color: #000;
+}
+</style>
+</head>
+
+<body style='margin: 0;' ><div class="content"><span class="icon weibo"></span><span class="icon qq"></span><span class="icon weixin"></span></div>
+
+</body>
+
+
+</html>

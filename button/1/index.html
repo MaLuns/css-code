@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<meta name="keywords" content=" ">
+<meta name="description" content="新拟物风按钮实现">
+<title>
+    拟物按钮
+</title>
+     
+        
+     
+    <style >body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ddd;
+}
+body button {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+body button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+</style>
+</head>
+
+<body style='margin: 0;' ><div id="app"></div>
+<script src='https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js' ></script>
+<script >"use strict";
+
+new Vue({
+  data: function data() {
+    return {
+      data: 0
+    };
+  },
+  methods: {
+    add: function add() {
+      this.data++;
+    }
+  },
+  el: "#app",
+  template: "\n<button @click=\"add\">\u62DF\u7269\u98CE\u6309\u94AE {{ data }}</button>\n"
+});</script></body>
+
+
+</html>

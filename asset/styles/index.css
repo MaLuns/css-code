@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: #f2f2f2;
+  background-image: url(/asset/image/bg.svg);
+  background-attachment: fixed;
+}
+.header {
+  height: 350px;
+  position: relative;
+  user-select: none;
+}
+.header .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 80px;
+  margin: auto;
+  text-align: center;
+  text-shadow: 0px 20px 10px #adadadd9;
+}
+.header .content h2 {
+  color: #353535;
+  font-size: 50px;
+  line-height: 50px;
+}
+.header .content h3 {
+  color: #353535;
+  font-weight: 300;
+  line-height: 40px;
+}
+.code-list {
+  width: 960px;
+  margin: 0px auto;
+  font-size: 0;
+}
+.code-list .code-item {
+  font-size: 1rem;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #dadada, #ffffff);
+  box-shadow: 30px 30px 60px #cecece, -30px -30px 60px #ffffff;
+}
+.code-list .code-item .code-ifr {
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.code-list .code-item .code-ifr .btn-editor {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.code-list .code-item .code-ifr iframe {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  width: 200%;
+  height: 200%;
+  background: transparent;
+  border: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  transform: scale(0.5);
+  transform-origin: top left;
+}
+.code-list .code-item .code-info {
+  padding: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.code-list .code-item .code-info h4 {
+  font-size: 14px;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+  display: block;
+  font-weight: bold;
+  overflow: hidden;
+  margin: 0 0 6px 0;
+}
+.code-list .code-item .code-info h4 a {
+  color: #515599;
+  transition: color 0.3s;
+}
+.code-list .code-item .code-info h4 a:hover {
+  color: #5e66d6;
+}
+.code-list .code-item .code-info .small {
+  color: #838383;
+  font-size: 14px;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.paginator {
+  margin: 60px 0 40px;
+  text-align: center;
+}
+.paginator .btn-prev,
+.paginator .btn-next,
+.paginator .number {
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #dadada, #ffffff);
+  box-shadow: inset 0px 0px 0px #cecece, inset 0px 0px 0px #ffffff, 4px 4px 8px #cecece, -4px -4px 8px #ffffff;
+}
+.paginator .btn-prev.disabled,
+.paginator .btn-next.disabled,
+.paginator .number.disabled {
+  cursor: no-drop;
+  background: #f2f2f2 !important;
+  box-shadow: 4px 4px 8px #cecece, -4px -4px 8px #ffffff !important;
+}
+.paginator .btn-prev.current,
+.paginator .btn-next.current,
+.paginator .number.current,
+.paginator .btn-prev:active,
+.paginator .btn-next:active,
+.paginator .number:active {
+  background: #f2f2f2;
+  box-shadow: inset 4px 4px 8px #cecece, inset -4px -4px 8px #ffffff, 0px 0px 0px #cecece, 0px 0px 0px #ffffff;
+}

@@ -1,0 +1,16 @@
+<svg viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect fill="#E0E3F5" transform="translate(127.254834, 230.254834) rotate(40.000000) translate(-127.254834, -230.254834) " x="495.254834" y="598.254834" width="43" height="43"></rect>
+            <rect fill="#DEEFF6" transform="translate(127.254834, 230.254834) rotate(40.000000) translate(-127.254834, -230.254834) " x="95.254834" y="198.254834" width="64" height="64"></rect>
+            <rect fill="#DEEFF6" transform="translate(1111.405592, 620.405592) rotate(45.000000) translate(-1111.405592, -620.405592) " x="1589.90559" y="198.905592" width="54" height="54"></rect>
+            <circle fill="#E4E4F2" opacity="0.45" cx="80.5" cy="987.5" r="16.5"></circle>
+            <circle fill="#C9CFED" opacity="0.45" cx="1786.5" cy="27.5" r="23.5"></circle>
+            <circle fill="#E7E6E6" opacity="0.45" cx="191" cy="51" r="18"></circle>
+            <circle fill="#EFEFEF" opacity="0.45" cx="1588" cy="499" r="18"></circle>
+            <ellipse stroke="#E4E4F2" stroke-width="10" fill-opacity="0" fill="#FFFFFF" opacity="0.45" cx="1673.5" cy="960.5" rx="48.5" ry="49.5"></ellipse>
+            <ellipse stroke="#E4E4F2" stroke-width="10" fill-opacity="0" fill="#FFFFFF" opacity="0.45" cx="1873.5" cy="331.5" rx="78.5" ry="79.5"></ellipse>
+            <ellipse stroke="#CEECF8" stroke-width="10" fill-opacity="0" fill="#FFFFFF" opacity="0.45" cx="235" cy="481.5" rx="44" ry="44.5"></ellipse>
+        </g>
+    </g>
+</svg>

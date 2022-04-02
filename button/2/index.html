@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<meta name="keywords" content=" ">
+<meta name="description" content="Vue3 单文件">
+<title>
+    Vue3
+</title>
+     
+        
+     
+    <style >body {
+  text-align: center;
+}
+body h1 {
+  color: red;
+}
+</style>
+</head>
+
+<body style='margin: 0;' ><div id="app"></div>
+<script src='https://cdn.jsdelivr.net/npm/vue@3.2.31/dist/vue.global.prod.js' ></script>
+<script >
+"use strict";
+if (!window.require) {
+    window.require = function(tar) {
+        return tar === 'vue' ? window.Vue : window[tar];
+    }
+}
+
+var _vue = require("vue");
+
+Vue.createApp({
+  setup: function setup(__props, _ref) {
+    var expose = _ref.expose;
+    expose();
+    var msg = (0, _vue.ref)('Hello Vue3!');
+    var __returned__ = {
+      msg: msg,
+      ref: _vue.ref
+    };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  },
+  template: "<h1>{{msg}}</h1><input v-model=\"msg\"/>"
+}).mount("#app");</script></body>
+
+
+</html>
