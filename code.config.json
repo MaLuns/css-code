@@ -1,0 +1,45 @@
+{
+    "site": {
+        "title": "",
+        "description": "",
+        "keywords": " ",
+        "author": "白云苍狗",
+        "language": "zh-Hans",
+        "url": "https://code.imalun.com",
+        "root": "/"
+    },
+    "dir": {
+        "source_dir": "source",
+        "asset_dir": "asset",
+        "script_dir": "script",
+        "theme_dir": "theme",
+        "dist_dir": "dist"
+    },
+    "code_file": {
+        "include": [
+            "**/**.vue",
+            "**/**.html"
+        ],
+        "exclude": [
+            "404.html"
+        ],
+        "ignore": []
+    },
+    "theme": {
+        "layout": "view",
+        "use": "default"
+    },
+    "pagination": {
+        "dir": "page",
+        "per_page": 6,
+        "order_by": [
+            "date",
+            "desc"
+        ]
+    },
+    "deploy": {
+        "type": "git",
+        "repository": "git@github.com:MaLuns/css-code.git",
+        "branch": "gh-page"
+    }
+}
